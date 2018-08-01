@@ -1,3 +1,16 @@
+
+Fork of trafex/alpine-nginx-php7
+
+With pdo-mysql included
+
+docker run -p 80:80 ddliu/alpine-nginx-php7
+
+
+----------------------
+
+
+
+
 Docker PHP-FPM 7.2 & Nginx 1.14 on Alpine Linux
 ==============================================
 Example PHP-FPM 7.2 & Nginx 1.14 setup for Docker, build on [Alpine Linux](http://www.alpinelinux.org/).

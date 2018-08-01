@@ -3,7 +3,7 @@ Fork of trafex/alpine-nginx-php7
 
 With pdo-mysql included
 
-docker run -p 80:80 ddliu/alpine-nginx-php7
+docker run -p 80:80 ddliu/php-nginx
 
 
 ----------------------

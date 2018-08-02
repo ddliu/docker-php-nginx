@@ -18,6 +18,8 @@ COPY config/php.ini /etc/php7/conf.d/zzz_custom.ini
 
 # Configure supervisord
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY bootstrap.php /bootstrap.php
+COPY bootstrap.sh /bootstrap.sh
 
 # Add application
 RUN mkdir -p /var/www/html
@@ -25,4 +27,4 @@ WORKDIR /var/www/html
 COPY src/ /var/www/html/
 
 EXPOSE 80 443
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+CMD ["/bootstrap.sh"]

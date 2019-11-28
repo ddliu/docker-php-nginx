@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  app:
+    image: ddliu/php-nginx
+    build: .
+    container_name: ddliu-php-nginx
+    environment:
+      TZ: Asia/Shanghai
